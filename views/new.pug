@@ -1,0 +1,15 @@
+extend layout 
+
+block content
+
+    header.text-center
+        h1.text-sky-400= 'Message Board'
+        p= 'Enter your message below'
+    main
+        section.form-container
+            form(action=`/new`, method=`post`)
+                input(id="title", type=`text`, name=`title`, placeholder=`title`)
+                input(id="textarea",type=`text`, name=`text`, placeholder=`text`)
+                input(id= "username",type=`text`, name=`username`, placeholder=`username`)
+                input(id="submit-btn",type=`submit`, value=`Submit`)
+        

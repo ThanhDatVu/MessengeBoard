@@ -2,8 +2,14 @@
   "name": "messengeboard",
   "version": "0.0.0",
   "private": true,
+  "engines": {
+    "node": "14.17.6"
+  },
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "devstart": "nodemon ./bin/www",
+    "serverstart": "DEBUG=express-locallibrary-tutorial:* & npm run devstart",
+    "buildcss": "tailwindcss -i public/stylesheets/tailwind.css -o public/stylesheets/style.css"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
@@ -11,6 +17,10 @@
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1",
+    "postcss": "^8.4.13",
     "pug": "2.0.0-beta11"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.0.24"
   }
 }
