@@ -2,16 +2,16 @@ var express = require('express');
 var router = express.Router();
 var messages = [
   {
-    title: 'Hello',
-    text: "Hi there!",
-    username: "Amando",
+    title: 'Oni-chan',
+    text: "NO BAKAAAA",
+    username: "Imouto-chan",
     date: new Date()
   },
   
   {
-    title: 'Hello',
-    text: "Hello World!",
-    username: "Charles",
+    title: 'Senpai',
+    text: "Notice meeeeeeee!",
+    username: "Kawaii kouhai",
     date: new Date()
   }
 ];
